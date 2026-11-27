@@ -1,0 +1,10 @@
+node_modules/
+build/
+dist/
+.expo/
+*.tsbuildinfo
+.DS_Store
+
+# Expo prebuild output
+apps/mobile/ios/
+apps/mobile/android/

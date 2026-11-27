@@ -1,0 +1,8 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // Editor default: `./StyledButton` resolves to `StyledButton.web.tsx`.
+    "moduleSuffixes": [".web", ""]
+  },
+  "include": ["src"]
+}

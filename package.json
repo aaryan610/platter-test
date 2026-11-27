@@ -1,0 +1,25 @@
+{
+  "name": "platter",
+  "private": true,
+  "packageManager": "pnpm@12.21.0",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "build": "pnpm --filter \"./packages/**\" run build",
+    "typecheck": "pnpm -r run typecheck",
+    "dev:web": "pnpm --filter @platter/web run dev",
+    "dev:mobile": "pnpm --filter @platter/mobile run start",
+    "verify": "pnpm run build && pnpm run typecheck && pnpm --filter @platter/web run build && pnpm --filter @platter/mobile run export"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.13",
+    "@babel/preset-react": "^7.29.7",
+    "@babel/preset-typescript": "^7.29.7",
+    "@rollup/plugin-babel": "^7.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^4.68.8",
+    "rollup-plugin-dts": "^6.5.1",
+    "typescript": "~6.0.3"
+  }
+}
